@@ -115,7 +115,7 @@ function processMessage($message) {
     // process incoming message
     $boolean = file_get_contents('booleans.txt');
     $booleans= explode("\n",$boolean);
-    $admin = "آ";
+    $admin = "225987393";
     $message_id = $message['message_id'];
     $rpto = $message['reply_to_message']['forward_from']['id'];
     $chat_id = $message['chat']['id'];
@@ -124,7 +124,7 @@ function processMessage($message) {
   
   $inlinebtn = json_encode([
     'inline_keyboard'=>[
-    [['text'=>'تبلیغات','url'=>'http://telegram.me/mench']]
+    [['text'=>'ادمین','url'=>'http://telegram.me/nader_ir_niakan']]
   ]
   ]);
     if (isset($message['photo'])) {
